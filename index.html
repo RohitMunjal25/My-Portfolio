@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Munjal | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">RM</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-blue"></div>
+    <div class="hero-glow glow-purple"></div>
+
+    <div class="hero-content" data-aos>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Opportunities
+      </div>
+      <h1 class="hero-name">Rohit<br /><span class="name-accent">Munjal</span></h1>
+      <div class="hero-role">
+        <span id="typing-text"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Full Stack Developer specializing in backend systems, API development &amp;
+        database management. Building scalable MERN stack applications.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-avatar-side" data-aos data-aos-delay="200">
+      <div class="avatar-wrap">
+        <div class="avatar-orbit"></div>
+        <div class="avatar-ring">
+          <div class="avatar-inner">
+            <img src="image.jpg" alt="Rohit Munjal">
+          </div>
+        </div>
+        <div class="avatar-status"></div>
+      </div>
+      <div class="stat-chips">
+        <div class="chip">
+          <div class="chip-num">3+</div>
+          <div class="chip-label">Projects</div>
+        </div>
+        <div class="chip">
+          <div class="chip-num">8.46</div>
+          <div class="chip-label">CGPA</div>
+        </div>
+        <div class="chip">
+          <div class="chip-num">MERN</div>
+          <div class="chip-label">Stack</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head" data-aos>
+      <span class="section-label">Who I Am</span>
+      <div class="section-divider"></div>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text" data-aos>
+        <p>
+          I'm a <strong>B.Tech CSE student</strong> at Modern Institute of Technology &amp;
+          Research Centre, Alwar — expected to graduate in <strong>June 2027</strong>.
+        </p>
+        <p>
+          I specialize in building <strong>scalable backend systems</strong>, designing
+          robust REST APIs, and architecting end-to-end web solutions using the MERN stack.
+        </p>
+        <p>
+          From deepfake detection platforms to secure notes apps, I enjoy solving
+          real-world problems with clean, efficient code.
+        </p>
+        <div class="info-list">
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <span>Alwar, Rajasthan</span>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📧</div>
+            <a href="mailto:mobilemunjal@gmail.com">mobilemunjal@gmail.com</a>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📞</div>
+            <span>+91-9079881442</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-card" data-aos data-aos-delay="150">
+        <h4>Academic Performance</h4>
+        <div class="cgpa-display">
+          <div class="cgpa-num" id="cgpa-counter">0</div>
+          <div class="cgpa-label">CGPA out of 10.0</div>
+        </div>
+        <div class="cgpa-bar">
+          <div class="cgpa-fill" id="cgpa-fill"></div>
+        </div>
+        <p class="cgpa-college">Modern Institute of Technology &amp; Research Centre</p>
+        <div class="about-badges">
+          <span class="abadge">B.Tech CSE</span>
+          <span class="abadge">2023 – 2027</span>
+          <span class="abadge">Full Stack</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head" data-aos>
+      <span class="section-label">What I Know</span>
+      <div class="section-divider"></div>
+      <h2 class="section-title">Technical Skills</h2>
+    </div>
+    
+    <div class="skills-grid">
+      <div class="skill-group" data-aos>
+        <h4 class="sg-title">Frontend</h4>
+        <div class="tags">
+          <span class="tag blue">React.js</span>
+          <span class="tag blue">HTML5</span>
+          <span class="tag blue">CSS3</span>
+          <span class="tag blue">Tailwind CSS</span>
+          <span class="tag blue">Vite</span>
+          <span class="tag blue">Axios</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos data-aos-delay="100">
+        <h4 class="sg-title">Backend</h4>
+        <div class="tags">
+          <span class="tag purple">Node.js</span>
+          <span class="tag purple">Express.js</span>
+          <span class="tag purple">REST API</span>
+          <span class="tag purple">JWT Auth</span>
+          <span class="tag purple">RBAC</span>
+          <span class="tag green">Python</span>
+          <span class="tag green">Flask</span>
+        </div>
+      </div>
+
+      <div class="skill-group" data-aos data-aos-delay="200" id="db-tools-group">
+        <h4 class="sg-title">Database &amp; Tools</h4>
+        <div class="tags">
+          <span class="tag green">MongoDB</span>
+          <span class="tag green">Mongoose</span>
+          <span class="tag amber">Git</span>
+          <span class="tag amber">GitHub</span>
+          <span class="tag amber">Postman</span>
+          <span class="tag amber">VS Code</span>
+          <span class="tag purple">EXIF</span>
+          <span class="tag purple">FFmpeg</span>
+          <span class="tag amber">AWS EC2/S3</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-head" data-aos>
+      <span class="section-label">What I've Built</span>
+      <div class="section-divider"></div>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured" data-aos>
+        <div class="project-number">01</div>
+        <div class="project-badge">Featured</div>
+        <h3 class="project-title">EviAuth</h3>
+        <p class="project-desc">
+          AI-based digital forensic platform for deepfake detection, AI-generated media analysis
+          &amp; tampered document verification. Integrated 10+ deep learning models using TensorFlow
+          &amp; PyTorch with zero-config deployment and hardware acceleration detection.
+        </p>
+        <div class="project-stack">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">MongoDB</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">Flask</span>
+          <span class="stack-tag">FFmpeg</span>
+          <span class="stack-tag">JWT</span>
+        </div>
+        <div class="project-links">
+          <a href="https://evi-auth.vercel.app/" class="proj-btn live">⚡ Live Demo</a>
+          <a href="https://github.com/RohitMunjal25/EviAuth" class="proj-btn">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos data-aos-delay="100">
+        <div class="project-number">02</div>
+        <h3 class="project-title">Employee Management System</h3>
+        <p class="project-desc">
+          Role-based workflow management system with task assignment, RBAC using Node.js
+          &amp; Express, and structured RESTful APIs with JWT authentication.
+        </p>
+        <div class="project-stack">
+          <span class="stack-tag">React</span>
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Express.js</span>
+          <span class="stack-tag">MongoDB</span>
+          <span class="stack-tag">JWT</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/RohitMunjal25/Employee-Management-System" class="proj-btn">⌥ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-aos data-aos-delay="200">
+        <div class="project-number">03</div>
+        <h3 class="project-title">NotesVault</h3>
+        <p class="project-desc">
+          Full-stack secure notes application with authentication, complete CRUD operations,
+          structured MongoDB database design and a responsive UI.
+        </p>
+        <div class="project-stack">
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Express.js</span>
+          <span class="stack-tag">MongoDB</span>
+          <span class="stack-tag">HTML5</span>
+          <span class="stack-tag">CSS3</span>
+          <span class="stack-tag">JS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://notes-vault-wheat.vercel.app/" class="proj-btn live">⚡ Live Demo</a>
+          <a href="https://github.com/RohitMunjal25/NotesVault" class="proj-btn">⌥ GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience">
+    <div class="section-head" data-aos>
+      <span class="section-label">My Journey</span>
+      <div class="section-divider"></div>
+      <h2 class="section-title">Education &amp; Training</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item" data-aos>
+        <div class="tl-dot blue-dot"></div>
+        <div class="tl-content">
+          <span class="tl-year">2023 — 2027</span>
+          <h3 class="tl-title">B.Tech — Computer Science Engineering</h3>
+          <p class="tl-org">Modern Institute of Technology &amp; Research Centre, Alwar</p>
+          <p class="tl-detail">CGPA: 8.46 / 10.0</p>
+        </div>
+      </div>
+
+      <div class="tl-item" data-aos data-aos-delay="100">
+        <div class="tl-dot purple-dot"></div>
+        <div class="tl-content">
+          <span class="tl-year">Jan – Feb 2026</span>
+          <h3 class="tl-title">Cloud Computing &amp; DevOps Tools</h3>
+          <p class="tl-org">Skill Oceans, Noida</p>
+          <ul class="tl-points">
+            <li>Worked with AWS CLI, EC2, and S3 for cloud operations</li>
+            <li>Deployment concepts and CLI-based cloud management</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item" data-aos data-aos-delay="200">
+        <div class="tl-dot purple-dot"></div>
+        <div class="tl-content">
+          <span class="tl-year">Sept 2025</span>
+          <h3 class="tl-title">Full-Stack Web Development</h3>
+          <p class="tl-org">Skill Oceans, Noida</p>
+          <ul class="tl-points">
+            <li>MERN stack — React, Node.js, Express, MongoDB</li>
+            <li>RESTful API design, JWT auth, NoSQL schema design</li>
+            <li>State management &amp; component-based UI with React.js</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-glow"></div>
+    <div class="contact-inner" data-aos>
+      <span class="section-label" style="display:block;text-align:center">Let's Connect</span>
+      <div class="section-divider" style="margin:12px auto 16px"></div>
+      <h2 class="section-title" style="text-align:center">Get In Touch</h2>
+      <p class="contact-desc">
+        I'm always open to discussing new projects, creative ideas, or opportunities
+        to be part of something great. Drop a message!
+      </p>
+      <div class="contact-links">
+        <a href="mailto:mobilemunjal@gmail.com" class="contact-link">
+          <span class="clink-icon">✉</span>
+          <div>
+            <div class="clink-label">Email</div>
+            <div class="clink-val">mobilemunjal@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/rohit-munjal25/" target="_blank" class="contact-link">
+          <span class="clink-icon">in</span>
+          <div>
+            <div class="clink-label">LinkedIn</div>
+            <div class="clink-val">Connect with me</div>
+          </div>
+        </a>
+        <a href="https://github.com/RohitMunjal25" target="_blank" class="contact-link">
+          <span class="clink-icon">⌥</span>
+          <div>
+            <div class="clink-label">GitHub</div>
+            <div class="clink-val">Check my repos</div>
+          </div>
+        </a>
+      </div>
+      <div class="location-box">
+        📍 Alwar, Rajasthan &nbsp;·&nbsp; Available for Remote &amp; On-site
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">RM</div>
+    <p>© 2026 <span class="footer-accent">Rohit Munjal</span>. Built with ❤️</p>
+    <div class="footer-links">
+      <a href="mailto:mobilemunjal@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/rohit-munjal25/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/RohitMunjal25" target="_blank">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
